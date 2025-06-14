@@ -1,9 +1,15 @@
 import './styles.css';
 
-export default function ProductCategory() {
+/* o componente deve receber as Props como um objeto*/
+type Props = {
+    name: string;
+}
+
+export default function ProductCategory({ name }: Props) {
     return(
         <div className="dsc-category">
-            Eletrônicos
+            { name }
         </div>
     );
 }
+
